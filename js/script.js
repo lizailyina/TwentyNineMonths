@@ -27,7 +27,7 @@ var cards = document.getElementsByClassName("card-img-top");
 
 function manageClick(i, id) { 
     return function() {
-        cards[i].src = "TwentyNineMonths/src/image" + id + ".jpg";
+        cards[i].src = "src/image" + id + ".jpg";
         console.log(i, cards[i].src);
     }
 }
