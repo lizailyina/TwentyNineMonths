@@ -21,4 +21,18 @@
 //     cards[i].addEventListener('click', handleClicks(i));
 // }
 
-// var d = getElementsByClassName("div");
+var dropdown = document.getElementsByClassName('dropdown-item');
+var cards = document.getElementsByClassName("card-img-top");
+
+
+function manageClick(i, id) { 
+    return function() {
+        cards[i].src = "TwentyNineMonths/src/image" + id + ".jpg";
+        console.log(id);
+    }
+}
+
+for(var i = 0; i < dropdown.length; ++i) {
+    var pos = Number(dropdown[i].id[0]);
+    dropdown[i].addEventListener('click', manageClick(pos, dropdown[i].id));
+}

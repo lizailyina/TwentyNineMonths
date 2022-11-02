@@ -102,5 +102,30 @@ h3 {
     font-size: 20px;
 }
 
+.card {
+    position: relative;
+    bottom: 0;
+    right: 0;
+    transition: right 0.5s, bottom 0.5s;
+}
+
+.card:hover {
+    box-shadow: 20px 20px 30px -10px #192824;
+    bottom: -10px;
+    right: 10px;
+}
+
+#tbc {
+    position: relative;
+    top: 0;
+    transition: top 0.5s
+}
+
+#tbc:hover {
+    top: -5px;
+}
+
+
+
 
 
