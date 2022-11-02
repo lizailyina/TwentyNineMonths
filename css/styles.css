@@ -38,12 +38,68 @@ color: #ffa000; /* Меняем цвет текста */
     text-shadow: 2px 2px 2px #000;
 }
 
+.shadow-text1{
+    color: black; /* Цвет  текста */
+    font-size: 2cm; /* Размер  текста */
+    font-weight: bold;
+    padding: 20px 0px;
+    line-height: 1;
+    -webkit-transition: all 0.5s ease;
+            transition: all 0.5s ease;
+  }
+
+.shadow-text1:hover {
+color: #FFB821; /* Меняем цвет текста */
+-webkit-text-shadow: 2px 2px 2px #000;
+-moz-text-shadow: 2px 2px 2px #000;
+    text-shadow: 2px 2px 2px #000;
+}
+
+.shadow-text2{
+    color: black; /* Цвет  текста */
+    font-size: 2cm; /* Размер  текста */
+    font-weight: bold;
+    padding: 20px 0px;
+    line-height: 1;
+    -webkit-transition: all 0.5s ease;
+            transition: all 0.5s ease;
+  }
+
+.shadow-text2:hover {
+color: #F5FF21; /* Меняем цвет текста */
+-webkit-text-shadow: 2px 2px 2px #000;
+-moz-text-shadow: 2px 2px 2px #000;
+    text-shadow: 2px 2px 2px #000;
+}
+
+.shadow-text3{
+    color: black; /* Цвет  текста */
+    font-size: 2cm; /* Размер  текста */
+    font-weight: bold;
+    padding: 20px 0px;
+    line-height: 1;
+    -webkit-transition: all 0.5s ease;
+            transition: all 0.5s ease;
+  }
+
+.shadow-text3:hover {
+color: #A8FF21; /* Меняем цвет текста */
+-webkit-text-shadow: 2px 2px 2px #000;
+-moz-text-shadow: 2px 2px 2px #000;
+    text-shadow: 2px 2px 2px #000;
+}
+
 .row {
     margin: 20px;
 }
 
 .spinner-border {
     align-self: center;
+}
+
+h3 {
+    font-family: fantasy;
+    font-size: 20px;
 }
 
 
