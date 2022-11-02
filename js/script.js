@@ -28,11 +28,11 @@ var cards = document.getElementsByClassName("card-img-top");
 function manageClick(i, id) { 
     return function() {
         cards[i].src = "TwentyNineMonths/src/image" + id + ".jpg";
-        console.log(id);
+        console.log(i, cards[i].src);
     }
 }
 
 for(var i = 0; i < dropdown.length; ++i) {
-    var pos = Number(dropdown[i].id[0]);
+    var pos = Number(dropdown[i].id[0]) - 1;
     dropdown[i].addEventListener('click', manageClick(pos, dropdown[i].id));
 }
