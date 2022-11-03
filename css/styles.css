@@ -8,15 +8,25 @@ h1 {
     font-size: 2cm;
     font-weight: bold;
     font-family: fantasy;
-    padding: 2cm;
+    padding-top: 2cm;
+    padding-left: 2cm;
+    padding-right: 2cm;
+}
+
+.card-img-top {
+    padding:5px;
 }
 
 .card-title {
+    text-align: center;
     font-family: cursive;
     font-weight: bold;
+    padding: 3px;
+    margin-top: 1px;
 }
 
 .card-text {
+    text-align: left;
     font-family: cursive;
     font-weight: lighter;
 }
@@ -84,8 +94,25 @@ color: #F5FF21; /* Меняем цвет текста */
 
 .shadow-text3:hover {
 color: #A8FF21; /* Меняем цвет текста */
--webkit-text-shadow: 2px 2px 2px #000;
--moz-text-shadow: 2px 2px 2px #000;
+    -webkit-text-shadow: 2px 2px 2px #000;
+    -moz-text-shadow: 2px 2px 2px #000;
+    text-shadow: 2px 2px 2px #000;
+}
+
+.shadow-text-sub{
+    text-align: center;
+    font-family:cursive;
+    font-style: italic;
+    font-size: 40px;
+    padding-bottom: 5%;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+  }
+
+.shadow-text-sub:hover {
+color: #ffa000; /* Меняем цвет текста */
+    -webkit-text-shadow: 2px 2px 2px #000;
+    -moz-text-shadow: 2px 2px 2px #000;
     text-shadow: 2px 2px 2px #000;
 }
 
@@ -98,8 +125,19 @@ color: #A8FF21; /* Меняем цвет текста */
 }
 
 h3 {
-    font-family: fantasy;
-    font-size: 20px;
+    text-align: center;
+    font-family:cursive;
+    font-style: italic;
+    font-size: 40px;
+    padding-bottom: 5%;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+#subheading:hover {
+    -webkit-text-shadow: 2px 2px 2px #000;
+    -moz-text-shadow: 2px 2px 2px #000;
+    text-shadow: 2px 2px 2px #000;
 }
 
 .card {
@@ -125,7 +163,48 @@ h3 {
     top: -5px;
 }
 
+.dropdown .dropdown-menu {
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
 
+    max-height: 0;
+    display: block;
+    overflow: hidden;
+    opacity: 0;
+}
+
+.dropdown.show .dropdown-menu {
+    box-shadow: 20px 20px 30px -10px #192824;
+    max-height: 300px;
+    opacity: 1;
+}
+
+#dropdownMenuButton {
+    background-color: #CACACA;
+    color:#000;
+    font-family:cursive;
+    font-weight: 100;
+}
+
+h6 {
+    text-align: right;
+    font-size: 12px;
+    font-family:monospace;
+    padding: 5px;   
+}
+
+.dropdown {
+    align-self: flex-end;
+    text-align: center;
+}
+
+p {
+    min-height: 154px;
+    padding: 5px;
+}
 
 
 

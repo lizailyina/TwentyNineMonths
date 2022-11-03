@@ -23,16 +23,21 @@
 
 var dropdown = document.getElementsByClassName('dropdown-item');
 var cards = document.getElementsByClassName("card-img-top");
+var h = document.getElementsByClassName("card-img-top-heading");
 
-
-function manageClick(i, id) { 
+function manageClick(cur, i, id) { 
     return function() {
         cards[i].src = "src/image" + id + ".jpg";
-        console.log(i, cards[i].src);
+        h[i].innerText = cur.innerText;
+        console.log(cur.innerText);
     }
 }
 
 for(var i = 0; i < dropdown.length; ++i) {
     var pos = Number(dropdown[i].id[0]) - 1;
-    dropdown[i].addEventListener('click', manageClick(pos, dropdown[i].id));
+    if(dropdown[i].id[dropdown[i].id.length - 1] == "1") {
+        h[pos].innerText = dropdown[i].innerText;
+    }
+    dropdown[i].addEventListener('click', manageClick(dropdown[i], pos, dropdown[i].id));
 }
+
